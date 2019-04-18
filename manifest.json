@@ -4,8 +4,8 @@
   "version": "1.0",
   "description": "Adds a GO button that Reopen current page instead of reloading it",
   "icons": {
-    "48": "chevron-right-solid.svg",
-    "96": "chevron-right-solid.svg"
+    "48": "./icon48.png",
+    "96": "./icon96.png"
   },
 
   "permissions": [
@@ -13,12 +13,16 @@
   ],
 
   "background": {
-    "scripts": ["background.js"]
+    "scripts": ["./background.js"]
   },
 
   "browser_action": {
     "default_icon": "chevron-right-solid.svg",
     "default_title": "Reopen current page"
+  },
+  "applications": {
+    "gecko": {
+      "id": "reopen-page@datalive.com.au"
+    }
   }
-
 }
